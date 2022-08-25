@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./Components/NavBar";
+import "./App/Style.css";
 
 function App() {
   return (
     <div className="App">
-    <h1>Primer desafío con React</h1>
-    <p>Tarde, pero llegué :D</p>
+    <NavBar/>
     </div>
   );
 }
