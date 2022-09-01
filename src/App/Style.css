@@ -1,12 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(8, 1, 1);
+    background-image: url(../Images/perro-fondo.jpeg);
+    background-size: 100vw, 100vh;
+    background-image: cover;
+}
+
+/* ESTILOS DEL NAV */
+
+nav {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #192A51;
 }
 
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: auto;
+}
+
+.nav__item {
+    list-style: none;
+    flex-direction: row;
 }
 
 .nav__link {
@@ -17,24 +39,96 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: .2em;
     color: wheat;
-    transform: translateY(1.1rem);
-}
-
-
-.logo {
-    display: flex;
-    flex-direction: column;
 }
 
 .nav__logo {
-    width: 100px;
-    height: 100px;   
+    list-style: none;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .2em;
+    color: wheat;
+    border: solid wheat 3px;
+    border-radius: 10% 20%;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
 }
 
-.nav__logo-nombre {
-    font-size: 1.5rem;
-    color: wheat;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: .1em;
-    margin: auto;
+.nav__logo:hover {
+    color: green;
 }
+
+.nav__link:hover {
+    color: green;
+}
+
+.imgCart {
+    position: absolute;
+    top: 1.1rem;
+    left: 14rem;
+    width: 65px;
+   
+}
+
+
+/* ESTILOS VENTANA MODAL - INICIO */
+
+.modalInicio {
+    width: 700px;
+    height: 400px;
+    background-color: #192A51;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(85%) translateY(20%)
+}
+
+.modalInicio__texto {
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modalInicio__x {
+    position: absolute;
+    width: 40px;
+    right: 10px;
+    top: 5px;
+    
+}
+
+.modal__texto-precio {
+    color: orange;
+}
+
+.modalInicio__img {
+    margin-top: 2rem;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.modalInicio__sect1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ItemListContainer */
+
+article {
+    display: flex;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+
